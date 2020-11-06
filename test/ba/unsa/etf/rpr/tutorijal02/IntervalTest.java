@@ -1,5 +1,7 @@
 package ba.unsa.etf.rpr.tutorijal02;
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class IntervalTest {
@@ -47,7 +49,7 @@ class IntervalTest {
         assertEquals("()", i.toString());
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     void intersect() {
         Interval i = new Interval(1.1, 2.5, true, false);
         Interval i2 = i.intersect(new Interval(2.2, 2.6, true, true));
